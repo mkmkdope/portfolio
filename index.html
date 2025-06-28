@@ -1,160 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MK | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="img/icon.png">
-    <!-- Bootstrap v5.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ming Kang - Software Developer Portfolio. Specializing in computer vision, Python, and web development."
+    />
+    <meta
+      name="keywords"
+      content="software developer, computer vision, Python, web development, Malaysia"
+    />
+    <meta name="author" content="Ming Kang" />
+    <title>Ming Kang | Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a href="#home">
-                <img src="img/icon.png" alt="logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="#home" class="navbar-brand">
+          <img src="img/icon.png" alt="MK Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button
+            id="theme-toggle"
+            class="btn btn-outline ms-3"
+            aria-label="Toggle dark mode"
+          >
+            <i class="bi bi-moon"></i>
+          </button>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="coin-container">
-                <div class="coin">
-                    <div class="coin-face front"></div>
-                    <div class="coin-face back"></div>
-                </div>
-            </div>
-            <h1 class="display-4 fw-bold">Hi, I'm Ming Kang</h1>
-            <p class="lead">
-                <img src="img/flag.png" alt="Malaysia" style="width: 40px;border: none;border-radius: 0%;"> 
-                Software Developer | Tech Enthusiast</p>
-            <div class="cta-buttons">
-                <!-- to be update
-                <button class="btn btn-primary btn-lg" onclick="window.open('resume.pdf')">View Resume</button>-->
-                <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Me</a>
-            </div>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-image">
+            <img src="img/mk.jpg" alt="Ming Kang" class="profile-pic" />
+          </div>
+          <h1>Hi, I'm Yap Ming Kang</h1>
+          <p class="subtitle">
+            <img src="img/flag.png" alt="Malaysia" class="flag" />
+            Web Developer
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">About Me</h2>
-            <div class="row">
-                <!-- Jobs -->
-                <div class="col-md-6">
-                    <h3>Experience</h3>
-                    <img src="img/edu360.png" alt="Logo" class="comLogo">
-                    <h6>EDU360 Academy</h6>
-                    <p>IT Intern<br><small> October 2024 - January 2025</small></p>
-                    <ul>
-                        <li>Taught students LEGO robotics programming.</li>
-                        <li>Laptop and Software Maintenance.</li>
-                    </ul>
-                    <hr>
-                    <img src="img/afm.png" alt="Logo" class="comLogo">
-                    <h6>Align Fasteners Manufacturing Sdn Bhd</h6>
-                    <p>Sales Clerk<br><small> March 2020 - April 2023</small></p>
-                    <ul>
-                        <li>Issued invoices and delivery orders.</li>
-                        <li>Handled customer telephone calls and messages.</li>
-                    </ul>
-                    <hr>
-                    <img src="img/bms.jpg" alt="Logo" class="comLogo">
-                    <h6>Brothers Management Services</h6>
-                    <p>Office Clerk<br><small> November 2016 - October 2019</small></p>
-                    <ul>
-                        <li>Quoted insurance and road tax for customers.</li>
-                        <li>Scheduled vehicle test dates and times.</li>
-                    </ul>
-                    <hr>
-                     <!-- Add more Job Experience here --> 
-                </div>
-                <!-- Edu -->
-                <div class="col-md-6">
-                    <h3>Education</h3>
-                    <img src="img/tarumt.png" alt="Logo" class="comLogo">
-                    <h6>Tunku Abdul Rahman University of Management and Technology</h6>
-                    <p>Diploma in Information Technology<br><small>2023 - 2025</small></p> 
-                    <hr>
-                     <!-- Add more education here -->
-                </div>
-            </div>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+
+        <div class="about-intro">
+          <p>
+            I'm a web developer from <strong>Malaysia</strong>, currently
+            pursuing a
+            <strong>Bachelor's Degree in Software Engineering</strong>. I’m
+            passionate about building full stack web applications and exploring
+            cloud technologies, with a focus on creating clean, practical
+            solutions.
+            <br />
+            I completed a <strong>4-month</strong> internship at EDU360 Academy,
+            where I taught robotics programming and explored side projects
+            involving OpenCV and MediaPipe. Before that, I worked in the
+            motorcar insurance and manufacturing industry for
+            <strong>three years</strong>, handling administrative and
+            documentation tasks — building a strong foundation in organization
+            and process.
+            <br />
+            Right now, I'm diving into the MERN stack and full stack
+            development, with plans to expand into cloud services. My long-term
+            goal is to become a <strong>full stack developer</strong>, with Java
+            development as a strong backup skillset.
+          </p>
         </div>
+
+        <!-- Skills -->
+        <div class="skills">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4><i class="bi bi-code-slash"></i> Programming</h4>
+              <div class="skill-tags">
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Java</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="bi bi-eye"></i> Computer Vision</h4>
+              <div class="skill-tags">
+                <span class="tag">OpenCV</span>
+                <span class="tag">MediaPipe</span>
+                <span class="tag">Hand Gesture Recognition</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="bi bi-gear"></i> Tools & Tech</h4>
+              <div class="skill-tags">
+                <span class="tag">Git</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">LEGO Robotics</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="bi bi-people"></i> Soft Skills</h4>
+              <div class="skill-tags">
+                <span class="tag">Teaching</span>
+                <span class="tag">Customer Service</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-education">
+          <!-- Experience -->
+          <div class="experience">
+            <h3><i class="bi bi-briefcase"></i> Experience</h3>
+
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <img
+                  src="img/edu360.png"
+                  alt="EDU360 Academy"
+                  class="company-logo"
+                />
+                <div class="timeline-details">
+                  <h4>IT Intern</h4>
+                  <p class="company">EDU360 Academy</p>
+                  <span class="date">October 2024 - January 2025</span>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Taught students LEGO robotics programming and computer science
+                  fundamentals
+                </li>
+                <li>
+                  Performed laptop and software maintenance for educational
+                  equipment
+                </li>
+                <li>
+                  Assisted in curriculum development and student assessment
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <img
+                  src="img/afm.png"
+                  alt="Align Fasteners Manufacturing"
+                  class="company-logo"
+                />
+                <div class="timeline-details">
+                  <h4>Sales Clerk</h4>
+                  <p class="company">Align Fasteners Manufacturing Sdn Bhd</p>
+                  <span class="date">March 2020 - April 2023</span>
+                </div>
+              </div>
+              <ul>
+                <li>Issued invoices and delivery orders with high accuracy</li>
+                <li>
+                  Handled customer telephone calls and messages professionally
+                </li>
+                <li>
+                  Maintained customer relationships and provided excellent
+                  service
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <img
+                  src="img/bms.jpg"
+                  alt="Brothers Management Services"
+                  class="company-logo"
+                />
+                <div class="timeline-details">
+                  <h4>Office Clerk</h4>
+                  <p class="company">Brothers Management Services</p>
+                  <span class="date">November 2016 - October 2019</span>
+                </div>
+              </div>
+              <ul>
+                <li>Quoted insurance and road tax for customers</li>
+                <li>Scheduled vehicle test dates and times efficiently</li>
+                <li>Managed administrative tasks and documentation</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education & Interests -->
+          <div class="education-interests">
+            <div class="education">
+              <h3><i class="bi bi-mortarboard"></i> Education</h3>
+
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <img src="img/tarumt.png" alt="TARUMT" class="company-logo" />
+                  <div class="timeline-details">
+                    <h4>Diploma in Information Technology</h4>
+                    <p class="company">
+                      Tunku Abdul Rahman University of Management and Technology
+                    </p>
+                    <span class="date">2023 - 2025</span>
+                  </div>
+                </div>
+                <div class="education-focus">
+                  <p><strong>Key Focus Areas:</strong></p>
+                  <ul>
+                    <li>Software Development & Programming</li>
+                    <li>Web Development & Database Management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="interests">
+              <h3><i class="bi bi-heart"></i> Interests & Hobbies</h3>
+              <div class="interests-grid">
+                <div class="interest-item">
+                  <i class="bi bi-code-square"></i>
+                  <span>Coding Projects</span>
+                </div>
+                <div class="interest-item">
+                  <i class="bi bi-book"></i>
+                  <span>Learning New Tech</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="project-card card" style="border: 3px solid black;">
-                        <img src="img/opencv.png" class="card-img-top" alt="Project 1" style="height: 290px;">
-                        <div class="card-body">
-                            <h5 class="card-title">OpenCV | computer vision</h5>
-                            <p class="card-text">Control volume with hand gesture.</p>
-                            <a href="https://youtu.be/zhv6jtWVJSU" target="_blank">Video</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card card" style="border: 3px solid black;">
-                        <img src="img/close.png" class="card-img-top" alt="Project 2" style="height: 290px;">
-                        <div class="card-body">
-                            <h5 class="card-title">MediaPipe | computer vision</h5>
-                            <p class="card-text">Hand gesture recognition using MediaPipe.</p>
-                            <a href="https://youtu.be/7HQDPAkEgCM" target="_blank">Video</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more projects here -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/opencv.png" alt="OpenCV Project" />
             </div>
+            <div class="project-content">
+              <h3>OpenCV | Computer Vision</h3>
+              <p>Control volume with hand gesture recognition using OpenCV.</p>
+              <!-- <a href="https://youtu.be/zhv6jtWVJSU" target="_blank" class="project-link">
+                            <i class="bi bi-play-circle"></i> Watch Demo
+                        </a> -->
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/close.png" alt="MediaPipe Project" />
+            </div>
+            <div class="project-content">
+              <h3>MediaPipe | Computer Vision</h3>
+              <p>Hand gesture recognition using MediaPipe framework.</p>
+              <!-- <a href="https://youtu.be/7HQDPAkEgCM" target="_blank" class="project-link">
+                            <i class="bi bi-play-circle"></i> Watch Demo
+                        </a> -->
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <footer id="contact" class="text-center py-5">
-        <div class="container">
-            <h2 class="mb-4">Contact Me</h2>
-            <div class="social-links mb-4">
-                <a href="mailto:mk.yap65@gmail.com" class="social-icon" target="_blank"><i class="bi bi-envelope"></i></a>
-                <a href="https://linkedin.com/in/mk-yap" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/mkmkdope" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
-            </div>
-            <p class="mb-0">© <span>2025</span> Yap Ming Kang. All rights reserved.</p>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>I'm always interested in new opportunities and collaborations.</p>
+        <div class="contact-links">
+          <a href="mailto:mk.yap65@gmail.com" class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>mk.yap65@gmail.com</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/mk-yap"
+            target="_blank"
+            class="contact-item"
+          >
+            <i class="bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/mkmkdope"
+            target="_blank"
+            class="contact-item"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
         </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="f-container">
+        <p>&copy; 2025 Ming Kang. All rights reserved.</p>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
         });
+      });
+
+      // Dark/Light mode toggle
+      const themeToggle = document.getElementById("theme-toggle");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const savedTheme = localStorage.getItem("theme");
+      const setTheme = (theme) => {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+        themeToggle.innerHTML =
+          theme === "dark"
+            ? '<i class="bi bi-sun"></i>'
+            : '<i class="bi bi-moon"></i>';
+      };
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (prefersDark) {
+        setTheme("dark");
+      }
+      themeToggle.addEventListener("click", () => {
+        const current =
+          document.documentElement.getAttribute("data-theme") === "dark"
+            ? "light"
+            : "dark";
+        setTheme(current);
+      });
     </script>
-</body>
+  </body>
 </html>
